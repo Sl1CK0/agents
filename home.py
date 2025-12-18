@@ -9,7 +9,7 @@ st.sidebar.title("⚡ Agent Factory")
 selection = st.sidebar.radio("Go to:", ["🏠 Home", "🏗️ Plan Agent", "🎨 Design Agent"])
 
 if selection == "🏠 Home":
-    st.title("Welcome to IPS Software Factory")
+    st.title("Welcome to SDLC GenAI factory")
     st.markdown("Select an Agent from the sidebar to begin.")
 
 elif selection == "🏗️ Plan Agent":
@@ -30,3 +30,4 @@ elif selection == "🎨 Design Agent":
     spec.loader.exec_module(module)
 
     module.main()
+
