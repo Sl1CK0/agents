@@ -3,9 +3,9 @@ import os
 import importlib.util
 import sys
 
-st.set_page_config(page_title="IPS Factory", layout="wide", page_icon="⚡")
+st.set_page_config(page_title="SDLC Gen-AI", layout="wide", page_icon="⚡")
 
-st.sidebar.title("⚡ IPS Factory")
+st.sidebar.title("⚡ Agent Factory")
 selection = st.sidebar.radio("Go to:", ["🏠 Home", "🏗️ Plan Agent", "🎨 Design Agent"])
 
 if selection == "🏠 Home":
@@ -28,4 +28,5 @@ elif selection == "🎨 Design Agent":
     module = importlib.util.module_from_spec(spec)
     sys.modules["p1_bpp"] = module
     spec.loader.exec_module(module)
+
     module.main()
